@@ -1,0 +1,11 @@
+# Project exclude paths
+/target/
+/.idea/
+/saves/
+/resourcepacks/
+/logs/
+/Blossom/
+/shaderpacks/
+/options.txt/
+/optionsof.txt/
+/out/

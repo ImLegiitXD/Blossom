@@ -1,0 +1,5 @@
+package moshi.blossom.event.impl.player;
+
+import moshi.blossom.event.Event;
+
+public class SlowDownEvent extends Event {}
