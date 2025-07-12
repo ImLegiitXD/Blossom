@@ -2,7 +2,7 @@
 
 ![moshi](https://github.com/user-attachments/assets/94b8cf45-a64c-48b4-87fb-700adeb5a135)
 
-nothing much about this client, it was mainly for universocraft back when it used verus & ncp
+nothing much about this client, it was a private client mainly for universocraft back when it used verus & ncp
 
 also: we used a newer viamcp version cuz the original one wasn't working
 
@@ -12,5 +12,5 @@ also: we used a newer viamcp version cuz the original one wasn't working
 ### **Credits**  
 - **[moshi]** – blossom client developer
 - **[me](https://github.com/ImLegiitXD)** – fixing all the jd gui decompiled src stuff  
-- **[hmmm...]** – for the eventbus related stuff, fixing stuff on the net/minecraft, adding back viamcp to it, also provided the jd-gui decompiled src    
+- **[???]** – for the eventbus related stuff, fixing stuff on the net/minecraft, adding back viamcp to it, also provided the jd-gui decompiled src    
 
