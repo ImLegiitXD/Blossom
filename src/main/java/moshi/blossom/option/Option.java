@@ -1,8 +1,11 @@
 package moshi.blossom.option;
 
 import java.util.function.Supplier;
+
+import lombok.Getter;
 import moshi.blossom.module.Module;
 
+@Getter
 public abstract class Option {
     private final String name;
 
@@ -14,34 +17,16 @@ public abstract class Option {
         this.name = name;
 
         this.displayName = displayName;
-
     }
 
     public Option(String name, String displayName, Supplier<Boolean> visibilityCondition) {
         this(name, displayName);
 
         this.visibilityCondition = visibilityCondition;
-
-    }
-
-    public String getName() {
-        return name;
-
-    }
-
-    public String getDisplayName() {
-        return displayName;
-
     }
 
     public String getDescription() {
         return null;
-
-    }
-
-    public Supplier<Boolean> getVisibilityCondition() {
-        return visibilityCondition;
-
     }
 
     public abstract String getChatStatus();

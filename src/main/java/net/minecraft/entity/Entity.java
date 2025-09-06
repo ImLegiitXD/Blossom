@@ -1025,23 +1025,21 @@ public abstract class Entity implements ICommandSender
              float f = event.getStrafe() * event.getStrafe() + event.getForward() * event.getForward();
 
              if (f >= 1.0E-4F) {
-
                    f = MathHelper.sqrt_float(f);
-
                    if (f < 1.0F)
-       {
-         f = 1.0F;
-       }
+                   {
+                       f = 1.0F;
+                   }
 
                   f = friction / f;
                   event.setStrafe(event.getStrafe() * f);
-            /* 1244 */       event.setForward(event.getForward() * f);
-            /* 1245 */       float f1 = MathHelper.sin(event.getYaw() * 3.1415927F / 180.0F);
-            /* 1246 */       float f2 = MathHelper.cos(event.getYaw() * 3.1415927F / 180.0F);
-            /* 1247 */       this.motionX += (event.getStrafe() * f2 - event.getForward() * f1);
-            /* 1248 */       this.motionZ += (event.getForward() * f2 + event.getStrafe() * f1);
-            /*      */     }
-        /*      */   }
+                  event.setForward(event.getForward() * f);
+                  float f1 = MathHelper.sin(event.getYaw() * 3.1415927F / 180.0F);
+                  float f2 = MathHelper.cos(event.getYaw() * 3.1415927F / 180.0F);
+                  this.motionX += (event.getStrafe() * f2 - event.getForward() * f1);
+                  this.motionZ += (event.getForward() * f2 + event.getStrafe() * f1);
+             }
+    }
 
     public int getBrightnessForRender(float partialTicks)
     {

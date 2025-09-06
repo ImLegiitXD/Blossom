@@ -11,7 +11,6 @@ public class ModeHandler {
 
     public void setupModes(ModuleMode... moduleModes) {
         this.modeList.addAll(Arrays.asList(moduleModes));
-
     }
 
     public void handle(String mode) {
@@ -20,11 +19,8 @@ public class ModeHandler {
 
             if (moduleMode.getName().equals(mode)) {
                 Blossom.INSTANCE.getEventBus().subscribe(moduleMode);
-
             }
-
         }
-
     }
 
     public void onEnable(String mode) {
@@ -33,11 +29,8 @@ public class ModeHandler {
 
             if (moduleMode.getName().equals(mode)) {
                 moduleMode.onEnable();
-
             }
-
         }
-
     }
 
     public void onDisable(String mode) {
@@ -46,11 +39,7 @@ public class ModeHandler {
 
             if (moduleMode.getName().equals(mode)) {
                 moduleMode.onDisable();
-
             }
-
         }
-
     }
-
 }

@@ -10,9 +10,7 @@ import moshi.blossom.option.Option;
 import moshi.blossom.util.ChatUtil;
 import moshi.skidded.font.Fonts;
 
-public class ModeOption
-
-extends Option
+public class ModeOption extends Option
 {
     private String mode;
 

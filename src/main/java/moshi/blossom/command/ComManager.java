@@ -12,7 +12,7 @@ public class ComManager {
     public List<Command> commandList = new ArrayList<>();
 
     public void init() {
-    this.commandList.addAll(Arrays.asList(new Command[] { (Command)new ModCom(), (Command)new ToggleCom(), (Command)new BindCom(), (Command)new TargetCom(), (Command)new FriendCom(), (Command)new ConfigCom(), (Command)new JoinCom() }));
+    this.commandList.addAll(Arrays.asList(new ModCom(), new ToggleCom(), new BindCom(), new TargetCom(), new FriendCom(), new ConfigCom(), new JoinCom()));
 
     }
 

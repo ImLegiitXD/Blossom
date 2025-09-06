@@ -11,11 +11,8 @@ public class BypassHelper
 {
     public BypassHelper() {
         this.handlePacket = (event -> {
-            if (event.getPacket().pType() == Packets.S_CONFIRM_TRANSACTION)
-            lastUID = ((S32PacketConfirmTransaction)event.getPacket()).getActionNumber();
-
+            if (event.getPacket().pType() == Packets.S_CONFIRM_TRANSACTION) lastUID = ((S32PacketConfirmTransaction)event.getPacket()).getActionNumber();
         });
-
     }
 
     public static int lastUID = 0;

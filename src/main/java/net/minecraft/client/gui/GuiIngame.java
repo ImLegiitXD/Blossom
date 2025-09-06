@@ -311,9 +311,9 @@ public class GuiIngame extends Gui
         }
 
         DrawEvent event = new DrawEvent(partialTicks, scaledresolution.getScaledWidth(), scaledresolution.getScaledHeight());
-        /*  332 */     event.deltaNs = ((float)System.nanoTime() - this.lastNs) / 1.0E8F;
-        /*  333 */     this.lastNs = (float)System.nanoTime();
-        /*  334 */     event.call();
+        event.deltaNs = ((float)System.nanoTime() - this.lastNs) / 1.0E8F;
+        this.lastNs = (float)System.nanoTime();
+        event.call();
 
         GlStateManager.enableBlend();
         GlStateManager.tryBlendFuncSeparate(770, 771, 1, 0);

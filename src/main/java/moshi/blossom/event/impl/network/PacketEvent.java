@@ -1,13 +1,16 @@
 package moshi.blossom.event.impl.network;
 
 import java.util.Arrays;
+
+import lombok.Getter;
+import lombok.Setter;
 import moshi.blossom.event.Event;
 import moshi.blossom.util.network.Packets;
 import net.minecraft.network.Packet;
 
-public class PacketEvent
-
-extends Event
+@Getter
+@Setter
+public class PacketEvent extends Event
 {
     private final Dir dir;
 
@@ -17,21 +20,6 @@ extends Event
         this.packet = packet;
 
         this.dir = dir;
-
-    }
-
-    public Packet<?> getPacket() {
-        return this.packet;
-
-    }
-
-    public void setPacket(Packet<?> packet) {
-        this.packet = packet;
-
-    }
-
-    public Dir getDir() {
-        return this.dir;
 
     }
 

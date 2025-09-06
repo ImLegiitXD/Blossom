@@ -62,22 +62,14 @@ public class ModManager {
 
     public static List<Module> getMods(Module.Category category) {
         List<Module> mods = new ArrayList<>(Blossom.INSTANCE.getModManager().moduleList);
-
         mods.removeIf(module -> (module.getCategory() != category));
-
         return mods;
-
     }
 
     public static Module getMod(String name) {
         for (Module module : Blossom.INSTANCE.getModManager().moduleList) {
-            if (module.getName().equalsIgnoreCase(name))
-            return module;
-
+            if (module.getName().equalsIgnoreCase(name)) return module;
         }
-
         throw new IllegalStateException("bad arg bro");
-
     }
-
 }

@@ -11,12 +11,9 @@ public class UserHelper
 
     public boolean isFriend(EntityLivingBase entity) {
         return (this.friendList.contains(entity.getName()) || this.friendList.contains(entity.getDisplayName().getUnformattedText()));
-
     }
 
     public boolean isTarget(EntityLivingBase entity) {
         return (this.targetList.contains(entity.getName()) || this.targetList.contains(entity.getDisplayName().getUnformattedText()));
-
     }
-
 }

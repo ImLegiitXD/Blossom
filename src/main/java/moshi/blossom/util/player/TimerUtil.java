@@ -1,12 +1,12 @@
 package moshi.blossom.util.player;
 
-import net.minecraft.client.Minecraft;
+import static moshi.blossom.util.Util.mc;
 
 public class TimerUtil
 {
     public static void setTimer(float ammount) {
-        /* 8 */     (Minecraft.getMinecraft()).timer.timerSpeed = ammount;
-        /*   */   }
+        mc.timer.timerSpeed = ammount;
+    }
 }
 
 
