@@ -1,4 +1,4 @@
-# Blossom Client (Leaked™ Edition)
+# Blossom Client (Open Source™ Edition)
 
 ![moshi](https://github.com/user-attachments/assets/94b8cf45-a64c-48b4-87fb-700adeb5a135)
 
