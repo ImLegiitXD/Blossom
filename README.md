@@ -3,6 +3,7 @@
 ![moshi](https://github.com/user-attachments/assets/94b8cf45-a64c-48b4-87fb-700adeb5a135)
 
 🤣
+
 <img width="716" height="277" alt="image" src="https://github.com/user-attachments/assets/5bdc10df-0368-41e6-a97b-0e0cd7db5e8a" />
 
 nothing much about this client, it was a private client mainly for universocraft back when it used verus & ncp
